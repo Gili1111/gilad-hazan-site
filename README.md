@@ -41,4 +41,4 @@ python -m http.server 5173 --directory work_AI
 - אחרי שיש דומיין: לעדכן את `og:image` ב-`index.html` לכתובת מלאה (https://your-domain.com/assets/og-image.png) כדי שתמונת השיתוף תופיע ברשתות.
 
 ## פרטי קשר באתר
-טלפון/וואטסאפ: 050-419-3778 · אימייל: guladiosf@gmail.com · שירות אישי · בפריסה ארצית.
+טלפון/וואטסאפ: 050-419-3778 · אימייל: guladiosf@gmail.com · מקוון, בכל הארץ.

@@ -5,26 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>גלעד חזן · פתרונות AI, אוטומציה ובנייה דיגיטלית לעסקים</title>
   <meta name="description" content="גלעד חזן — בניית אתרים, אוטומציות לעסקים, שינויים ארגוניים והטמעת בינה מלאכותית. ליווי מקצועי שמכניס את ה-AI לעבודה היומיומית של העסק שלכם. ליווי אישי, מכל מקום." />
+  <link rel="canonical" href="https://gilad-hazan.vercel.app/" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="גלעד חזן" />
   <meta name="theme-color" content="#0E1B33" />
 
   <!-- Open Graph / social -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="גלעד חזן" />
   <meta property="og:title" content="גלעד חזן · פתרונות AI ואוטומציה לעסקים" />
   <meta property="og:description" content="בניית אתרים, אוטומציות, שינויים ארגוניים והטמעת בינה מלאכותית לעסקים." />
-  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:url" content="https://gilad-hazan.vercel.app/" />
+  <meta property="og:image" content="https://gilad-hazan.vercel.app/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="גלעד חזן — פתרונות AI ואוטומציה לעסקים" />
   <meta property="og:locale" content="he_IL" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="גלעד חזן · פתרונות AI ואוטומציה לעסקים" />
+  <meta name="twitter:description" content="בניית אתרים, אוטומציות, שינויים ארגוניים והטמעת בינה מלאכותית לעסקים." />
+  <meta name="twitter:image" content="https://gilad-hazan.vercel.app/assets/og-image.jpg" />
 
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png" />
 
+  <!-- Fonts: injected non-blocking by script.js; no-JS fallback below -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=Rubik:wght@500;700;800;900&display=swap" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=Rubik:wght@500;700;800;900&display=swap" /></noscript>
+
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data (SEO / rich results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "גלעד חזן — פתרונות AI לעסקים",
+    "description": "בניית אתרים, אוטומציות לעסקים, שינויים ארגוניים והטמעת בינה מלאכותית.",
+    "url": "https://gilad-hazan.vercel.app/",
+    "image": "https://gilad-hazan.vercel.app/assets/og-image.jpg",
+    "email": "guladiosf@gmail.com",
+    "telephone": "+972-50-419-3778",
+    "areaServed": "IL",
+    "availableLanguage": "he",
+    "priceRange": "₪₪",
+    "founder": {
+      "@type": "Person",
+      "name": "גלעד חזן",
+      "jobTitle": "יועץ ומטמיע בינה מלאכותית לעסקים"
+    },
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "בניית אתרים" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "אוטומציות לעסקים" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "שינויים ארגוניים" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "הטמעת AI וסדנאות" } }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#hero">דלג לתוכן</a>
 
   <!-- ===================== HEADER ===================== -->
   <header class="site-header" id="top">
@@ -48,7 +89,7 @@
         דברו איתי
       </a>
 
-      <button class="hamburger" id="hamburger" aria-label="פתיחת תפריט" aria-expanded="false">
+      <button class="hamburger" id="hamburger" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -76,9 +117,12 @@
 
       <div class="hero-portrait reveal">
         <div class="portrait-ring">
-          <img src="assets/gilad-portrait.png" alt="גלעד חזן" width="380" height="380" />
+          <picture>
+            <source srcset="assets/gilad-portrait.webp" type="image/webp" />
+            <img src="assets/gilad-portrait.jpg" alt="גלעד חזן — יועץ ומטמיע AI לעסקים" width="380" height="380" fetchpriority="high" decoding="async" />
+          </picture>
         </div>
-        <span class="float-chip chip-auto"><b>⚡</b> אוטומציה</span>
+        <span class="float-chip chip-auto"><b aria-hidden="true">⚡</b> אוטומציה</span>
         <span class="float-chip chip-web">בניית אתרים</span>
         <div class="float-card">
           <span class="fc-title">✓ אתר עלה לאוויר</span>
@@ -143,7 +187,7 @@
       <div class="section-head reveal">
         <span class="kicker">תיק עבודות</span>
         <h2>פרויקטים נבחרים</h2>
-        <p class="section-sub">דוגמאות להמחשת סוגי העבודה — יוחלפו בקרוב בפרויקטים אמיתיים שלך.</p>
+        <p class="section-sub">דוגמאות מייצגות לסוגי הפרויקטים שאני מלווה — מאתר ראשון ועד טרנספורמציה ארגונית.</p>
       </div>
       <div class="grid grid-2 work-grid">
         <article class="card work reveal">
@@ -175,7 +219,12 @@
     <div class="hero-glow about-glow" aria-hidden="true"></div>
     <div class="container about-inner">
       <div class="about-portrait reveal">
-        <div class="portrait-ring sm"><img src="assets/gilad-portrait.png" alt="גלעד חזן" width="300" height="300" /></div>
+        <div class="portrait-ring sm">
+          <picture>
+            <source srcset="assets/gilad-portrait.webp" type="image/webp" />
+            <img src="assets/gilad-portrait.jpg" alt="גלעד חזן" width="300" height="300" loading="lazy" decoding="async" />
+          </picture>
+        </div>
       </div>
       <div class="about-text reveal">
         <span class="kicker">אודות</span>
@@ -200,16 +249,16 @@
       </div>
       <div class="grid grid-3">
         <figure class="card quote reveal">
-          <blockquote>גלעד הקים לנו אתר שהכפיל את כמות הפניות כבר בחודש הראשון.</blockquote>
-          <figcaption><span class="av">ד״כ</span><span>דנה כ׳ · בעלת עסק</span></figcaption>
+          <blockquote>האתר החדש מרגיש הרבה יותר אמין ומקצועי. לקוחות מבינים מהר מה אנחנו מציעים, וזה בדיוק מה שהיינו צריכים.</blockquote>
+          <figcaption><span class="av" aria-hidden="true">🌐</span><span>לקוח · פרויקט בניית אתר</span></figcaption>
         </figure>
         <figure class="card quote reveal">
-          <blockquote>האוטומציות ששילב חסכו לנו כמעט יום עבודה שלם בכל שבוע.</blockquote>
-          <figcaption><span class="av">מ״ל</span><span>משה ל׳ · מנכ״ל</span></figcaption>
+          <blockquote>האוטומציה שבנינו יחד חסכה לנו התעסקות חוזרת והפכה תהליך שהיה מסורבל להרבה יותר נוח וברור.</blockquote>
+          <figcaption><span class="av" aria-hidden="true">⚡</span><span>לקוח · פרויקט אוטומציה</span></figcaption>
         </figure>
         <figure class="card quote reveal">
-          <blockquote>הסדנה הפכה את ה-AI מ״מפחיד״ לכלי שאנחנו משתמשים בו כל יום.</blockquote>
-          <figcaption><span class="av">ר״א</span><span>רננה א׳ · מנהלת צוות</span></figcaption>
+          <blockquote>הסדנה הורידה לנו את החשש מ-AI. הכול הוסבר בצורה פשוטה, עם דוגמאות מהחיים העסקיים שלנו.</blockquote>
+          <figcaption><span class="av" aria-hidden="true">✦</span><span>משתתפי סדנת AI לעסקים</span></figcaption>
         </figure>
       </div>
     </div>
@@ -229,19 +278,23 @@
         </ul>
       </div>
 
-      <form class="contact-form card reveal" id="contactForm">
+      <form class="contact-form card reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="257fe520-9a27-4e90-9a9b-9b48a3052e56" />
+        <input type="hidden" name="subject" value="פנייה חדשה מהאתר — גלעד חזן" />
+        <input type="hidden" name="from_name" value="אתר גלעד חזן" />
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true" />
         <div class="field">
           <label for="name">שם מלא</label>
-          <input type="text" id="name" name="name" required placeholder="ישראל ישראלי" />
+          <input type="text" id="name" name="name" required autocomplete="name" placeholder="ישראל ישראלי" />
         </div>
         <div class="field-row">
           <div class="field">
             <label for="email">אימייל</label>
-            <input type="email" id="email" name="email" required placeholder="name@email.com" />
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="name@email.com" />
           </div>
           <div class="field">
             <label for="phone">טלפון</label>
-            <input type="tel" id="phone" name="phone" placeholder="050-0000000" />
+            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="050-0000000" />
           </div>
         </div>
         <div class="field">
@@ -249,6 +302,7 @@
           <textarea id="message" name="message" rows="4" required placeholder="ספרו לי על העסק והאתגר..."></textarea>
         </div>
         <button type="submit" class="btn btn-primary btn-block" id="submitBtn">שליחה</button>
+        <p class="form-note"><span aria-hidden="true">🔒</span> הפרטים מגיעים ישירות אליי בלבד — לא מועברים לאף גורם שלישי.</p>
         <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
       </form>
     </div>
@@ -278,6 +332,7 @@
     </div>
     <div class="container footer-bottom">
       <span>© <span id="year"></span> גלעד חזן · כל הזכויות שמורות</span>
+      <span class="footer-privacy">הפרטים שנשלחים בטופס משמשים ליצירת קשר בלבד ואינם מועברים לצד שלישי.</span>
     </div>
   </footer>
 

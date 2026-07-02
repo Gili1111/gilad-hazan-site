@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gilad-hazan.vercel.app/sitemap.xml

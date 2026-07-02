@@ -2,18 +2,24 @@
    גלעד חזן — site interactions
    ============================================================ */
 
-/* --- Web3Forms access key ---------------------------------
-   To make the contact form email you directly:
-   1. Go to https://web3forms.com  → enter guladiosf@gmail.com → get a free Access Key.
-   2. Paste it below, replacing YOUR_WEB3FORMS_ACCESS_KEY.
-   Until then, the form falls back to opening the visitor's email app.
----------------------------------------------------------------*/
+/* --- Web3Forms access key (public by design — safe in client-side code) ----
+   Contact-form submissions are emailed to guladiosf@gmail.com via Web3Forms.
+   The <form> also has a native action="…/submit" fallback so it works with JS off.
+----------------------------------------------------------------------------*/
 var WEB3FORMS_ACCESS_KEY = "257fe520-9a27-4e90-9a9b-9b48a3052e56";
 var CONTACT_EMAIL = "guladiosf@gmail.com";
 
 /* Mark that JS is active — enables the reveal animations defined under html.js.
    Without this class the .reveal content stays fully visible (no-JS safe). */
 document.documentElement.classList.add("js");
+
+/* Load web fonts without blocking first paint (CSP-friendly: no inline onload). */
+(function () {
+  var f = document.createElement("link");
+  f.rel = "stylesheet";
+  f.href = "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=Rubik:wght@500;700;800;900&display=swap";
+  document.head.appendChild(f);
+})();
 
 document.addEventListener("DOMContentLoaded", function () {
   // year
