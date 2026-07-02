@@ -85,6 +85,28 @@ document.addEventListener("DOMContentLoaded", function () {
     revealAll();
   }
 
+  // WhatsApp invite bubble: appears after a short delay, dismissal remembered for the session
+  var bubble = document.getElementById("waBubble");
+  var bubbleClose = document.getElementById("waBubbleClose");
+  if (bubble && bubbleClose) {
+    var dismissed = false;
+    try { dismissed = sessionStorage.getItem("waBubbleDismissed") === "1"; } catch (e) {}
+    if (!dismissed) {
+      bubble.hidden = false;
+      setTimeout(function () { bubble.classList.add("show"); }, 2500);
+      bubbleClose.addEventListener("click", function () {
+        bubble.classList.remove("show");
+        setTimeout(function () { bubble.hidden = true; }, 350);
+        try { sessionStorage.setItem("waBubbleDismissed", "1"); } catch (e) {}
+      });
+      // Clicking through to WhatsApp also dismisses the bubble
+      bubble.querySelector("a").addEventListener("click", function () {
+        bubble.classList.remove("show");
+        try { sessionStorage.setItem("waBubbleDismissed", "1"); } catch (e) {}
+      });
+    }
+  }
+
   // contact form
   var form = document.getElementById("contactForm");
   var statusEl = document.getElementById("formStatus");
